@@ -16,6 +16,8 @@
 		0C76825E1A131E9200E3B77D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C76825D1A131E9200E3B77D /* SystemConfiguration.framework */; };
 		0C7682611A131EC800E3B77D /* KamcordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7682601A131EC800E3B77D /* KamcordModel.m */; };
 		0C7682641A132DCF00E3B77D /* CellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7682631A132DCF00E3B77D /* CellTableViewCell.m */; };
+		0C7682681A132EB500E3B77D /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7682671A132EB500E3B77D /* CoreDataTableViewController.m */; };
+		0C7682841A13316800E3B77D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C7682831A13316800E3B77D /* CoreData.framework */; };
 		0CEB274A1A131CC200CAE57F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB27491A131CC200CAE57F /* TableViewController.m */; };
 		E95D35AABD09C7D8636F6B23 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B65C6F5CE10B608D46441E /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,9 @@
 		0C7682601A131EC800E3B77D /* KamcordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KamcordModel.m; path = ../KamcordModel.m; sourceTree = "<group>"; };
 		0C7682621A132DCF00E3B77D /* CellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellTableViewCell.h; sourceTree = "<group>"; };
 		0C7682631A132DCF00E3B77D /* CellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellTableViewCell.m; sourceTree = "<group>"; };
+		0C7682661A132EB500E3B77D /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		0C7682671A132EB500E3B77D /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		0C7682831A13316800E3B77D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0CEB27481A131CC200CAE57F /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		0CEB27491A131CC200CAE57F /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		AB023A48AAF1B136B7474297 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C7682841A13316800E3B77D /* CoreData.framework in Frameworks */,
 				0C76825E1A131E9200E3B77D /* SystemConfiguration.framework in Frameworks */,
 				E95D35AABD09C7D8636F6B23 /* libPods.a in Frameworks */,
 			);
@@ -98,6 +104,7 @@
 		0C2C95911A1319B4002CFD08 /* KamcordCC */ = {
 			isa = PBXGroup;
 			children = (
+				0C7682651A132EB500E3B77D /* CDTVC */,
 				0C7682621A132DCF00E3B77D /* CellTableViewCell.h */,
 				0C7682631A132DCF00E3B77D /* CellTableViewCell.m */,
 				0C76825F1A131EC800E3B77D /* KamcordModel.h */,
@@ -140,6 +147,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0C7682651A132EB500E3B77D /* CDTVC */ = {
+			isa = PBXGroup;
+			children = (
+				0C7682661A132EB500E3B77D /* CoreDataTableViewController.h */,
+				0C7682671A132EB500E3B77D /* CoreDataTableViewController.m */,
+			);
+			path = CDTVC;
+			sourceTree = "<group>";
+		};
 		602D9B15A0AE064FF825FBB5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +168,7 @@
 		65AA6CB9B0D8B6369F610527 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C7682831A13316800E3B77D /* CoreData.framework */,
 				0C76825D1A131E9200E3B77D /* SystemConfiguration.framework */,
 				0C76825B1A131DF900E3B77D /* libPods-RestKit.a */,
 				C8B65C6F5CE10B608D46441E /* libPods.a */,
@@ -297,6 +314,7 @@
 			files = (
 				0C2C95981A1319B4002CFD08 /* AppDelegate.m in Sources */,
 				0CEB274A1A131CC200CAE57F /* TableViewController.m in Sources */,
+				0C7682681A132EB500E3B77D /* CoreDataTableViewController.m in Sources */,
 				0C2C95951A1319B4002CFD08 /* main.m in Sources */,
 				0C7682611A131EC800E3B77D /* KamcordModel.m in Sources */,
 				0C7682641A132DCF00E3B77D /* CellTableViewCell.m in Sources */,

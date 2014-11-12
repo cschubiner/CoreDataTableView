@@ -23,19 +23,45 @@ NSMutableArray* videoArray;
     [super viewDidLoad];
      videoArray = [[NSMutableArray alloc]init];
     
+    /*
+     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+
+     //compute somehting long
+        // tell the main thread
+        dispatch_async(dispatch_get_main_queue(), ^{
+            ProcessResults(results);
+        });
+    });
+    */
     
-    [JSONHTTPClient getJSONFromURLWithString:@"https://www.kamcord.com/app/v2/videos/feed/?feed_id=0"
-                                  completion:^(NSDictionary *json, JSONModelError *err) {
-                                      
-                                      for (NSDictionary * video in json[@"response"][@"video_list"]) {
-                                      KamcordModel1* kamcordModel = [[KamcordModel1 alloc] initWithDictionary:video error:nil];
-                                          [videoArray addObject:kamcordModel];
-                                      }
-                                      
-                                      
-                                      [self.tableView reloadData];
-                                      
-                                  }];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+
+        [JSONHTTPClient getJSONFromURLWithString:@"https://www.kamcord.com/app/v2/videos/feed/?feed_id=0"
+                                      completion:^(NSDictionary *json, JSONModelError *err) {
+                                          
+                                          int count = 0;
+                                          for (NSDictionary * video in json[@"response"][@"video_list"]) {
+                                              KamcordModel1* kamcordModel = [[KamcordModel1 alloc] initWithDictionary:video error:nil];
+                                              [videoArray addObject:kamcordModel];
+                                              
+                                              
+                                              dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                                                  NSURL* url = [NSURL URLWithString:kamcordModel.thumbnails[@"REGULAR"]];
+                                                  [kamcordModel setThumbnail:[UIImage imageWithData:[[NSData alloc] initWithContentsOfURL:url]]];
+                                                  dispatch_async(dispatch_get_main_queue(), ^{
+                                                      [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:count inSection:0]] withRowAnimation:UITableViewRowAnimationLeft];
+                                                  });
+                                                      });
+                                              
+                                              count++;
+                                          }
+                                          dispatch_async(dispatch_get_main_queue(), ^{
+                                              [self.tableView reloadData];
+                                          });
+                                        }];
+    });
+
+  
     
 
 }
@@ -60,7 +86,10 @@ NSMutableArray* videoArray;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
+    KamcordModel1 * kamcordModel = [videoArray objectAtIndex:indexPath.row];
     
+    [[cell textLabel]setText:kamcordModel.title];
+    [[cell imageView]setImage:kamcordModel.thumbnail];
     
     return cell;
 }

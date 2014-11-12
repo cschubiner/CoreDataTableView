@@ -6,12 +6,14 @@
 //  Copyright (c) 2014 Schubiner. All rights reserved.
 //
 
+@import UIKit;
 #import "JSONModel.h"
 
 @interface KamcordModel1 : JSONModel
 
-@property (assign, nonatomic) NSString* video_url;
-@property (assign, nonatomic) NSString* title;
-@property (assign, nonatomic) NSDictionary* thumbnails;
+@property (nonatomic, strong) NSString* video_url;
+@property (nonatomic, strong) NSString* title;
+@property (nonatomic, weak) NSDictionary* thumbnails;
+@property (nonatomic, strong) UIImage<Ignore> * thumbnail;
 
 @end
