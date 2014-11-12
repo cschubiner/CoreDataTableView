@@ -44,7 +44,6 @@
 		0C2C95A81A1319B4002CFD08 /* KamcordCCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KamcordCCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C2C95AD1A1319B4002CFD08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C2C95AE1A1319B4002CFD08 /* KamcordCCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KamcordCCTests.m; sourceTree = "<group>"; };
-		0C76825B1A131DF900E3B77D /* libPods-RestKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RestKit.a"; path = "Pods/build/Debug-iphoneos/libPods-RestKit.a"; sourceTree = "<group>"; };
 		0C76825D1A131E9200E3B77D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0C76825F1A131EC800E3B77D /* KamcordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KamcordModel.h; path = ../KamcordModel.h; sourceTree = "<group>"; };
 		0C7682601A131EC800E3B77D /* KamcordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KamcordModel.m; path = ../KamcordModel.m; sourceTree = "<group>"; };
@@ -170,7 +169,6 @@
 			children = (
 				0C7682831A13316800E3B77D /* CoreData.framework */,
 				0C76825D1A131E9200E3B77D /* SystemConfiguration.framework */,
-				0C76825B1A131DF900E3B77D /* libPods-RestKit.a */,
 				C8B65C6F5CE10B608D46441E /* libPods.a */,
 			);
 			name = Frameworks;

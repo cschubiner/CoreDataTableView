@@ -11,7 +11,7 @@
 
 @interface KamcordModel1 : JSONModel
 
-@property (nonatomic, strong) NSString* video_url;
+@property (nonatomic, strong) NSURL* video_url;
 @property (nonatomic, strong) NSString* title;
 @property (nonatomic, weak) NSDictionary* thumbnails;
 @property (nonatomic, strong) UIImage<Ignore> * thumbnail;
