@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		0C2C95951A1319B4002CFD08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2C95941A1319B4002CFD08 /* main.m */; };
 		0C2C95981A1319B4002CFD08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2C95971A1319B4002CFD08 /* AppDelegate.m */; };
-		0C2C959B1A1319B4002CFD08 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2C959A1A1319B4002CFD08 /* ViewController.m */; };
 		0C2C959E1A1319B4002CFD08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2C959C1A1319B4002CFD08 /* Main.storyboard */; };
 		0C2C95A01A1319B4002CFD08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C2C959F1A1319B4002CFD08 /* Images.xcassets */; };
 		0C2C95A31A1319B4002CFD08 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2C95A11A1319B4002CFD08 /* LaunchScreen.xib */; };
 		0C2C95AF1A1319B4002CFD08 /* KamcordCCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2C95AE1A1319B4002CFD08 /* KamcordCCTests.m */; };
+		0C76825E1A131E9200E3B77D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C76825D1A131E9200E3B77D /* SystemConfiguration.framework */; };
+		0C7682611A131EC800E3B77D /* KamcordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7682601A131EC800E3B77D /* KamcordModel.m */; };
+		0C7682641A132DCF00E3B77D /* CellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7682631A132DCF00E3B77D /* CellTableViewCell.m */; };
+		0CEB274A1A131CC200CAE57F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB27491A131CC200CAE57F /* TableViewController.m */; };
+		E95D35AABD09C7D8636F6B23 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B65C6F5CE10B608D46441E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +36,23 @@
 		0C2C95941A1319B4002CFD08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C2C95961A1319B4002CFD08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0C2C95971A1319B4002CFD08 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0C2C95991A1319B4002CFD08 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0C2C959A1A1319B4002CFD08 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0C2C959D1A1319B4002CFD08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C2C959F1A1319B4002CFD08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0C2C95A21A1319B4002CFD08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0C2C95A81A1319B4002CFD08 /* KamcordCCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KamcordCCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C2C95AD1A1319B4002CFD08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C2C95AE1A1319B4002CFD08 /* KamcordCCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KamcordCCTests.m; sourceTree = "<group>"; };
+		0C76825B1A131DF900E3B77D /* libPods-RestKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RestKit.a"; path = "Pods/build/Debug-iphoneos/libPods-RestKit.a"; sourceTree = "<group>"; };
+		0C76825D1A131E9200E3B77D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0C76825F1A131EC800E3B77D /* KamcordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KamcordModel.h; path = ../KamcordModel.h; sourceTree = "<group>"; };
+		0C7682601A131EC800E3B77D /* KamcordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KamcordModel.m; path = ../KamcordModel.m; sourceTree = "<group>"; };
+		0C7682621A132DCF00E3B77D /* CellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellTableViewCell.h; sourceTree = "<group>"; };
+		0C7682631A132DCF00E3B77D /* CellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellTableViewCell.m; sourceTree = "<group>"; };
+		0CEB27481A131CC200CAE57F /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		0CEB27491A131CC200CAE57F /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		AB023A48AAF1B136B7474297 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C8B65C6F5CE10B608D46441E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB339F51C49D85BC27351E46 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C76825E1A131E9200E3B77D /* SystemConfiguration.framework in Frameworks */,
+				E95D35AABD09C7D8636F6B23 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +81,8 @@
 				0C2C95911A1319B4002CFD08 /* KamcordCC */,
 				0C2C95AB1A1319B4002CFD08 /* KamcordCCTests */,
 				0C2C95901A1319B4002CFD08 /* Products */,
+				602D9B15A0AE064FF825FBB5 /* Pods */,
+				65AA6CB9B0D8B6369F610527 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +98,14 @@
 		0C2C95911A1319B4002CFD08 /* KamcordCC */ = {
 			isa = PBXGroup;
 			children = (
+				0C7682621A132DCF00E3B77D /* CellTableViewCell.h */,
+				0C7682631A132DCF00E3B77D /* CellTableViewCell.m */,
+				0C76825F1A131EC800E3B77D /* KamcordModel.h */,
+				0C7682601A131EC800E3B77D /* KamcordModel.m */,
+				0CEB27481A131CC200CAE57F /* TableViewController.h */,
+				0CEB27491A131CC200CAE57F /* TableViewController.m */,
 				0C2C95961A1319B4002CFD08 /* AppDelegate.h */,
 				0C2C95971A1319B4002CFD08 /* AppDelegate.m */,
-				0C2C95991A1319B4002CFD08 /* ViewController.h */,
-				0C2C959A1A1319B4002CFD08 /* ViewController.m */,
 				0C2C959C1A1319B4002CFD08 /* Main.storyboard */,
 				0C2C959F1A1319B4002CFD08 /* Images.xcassets */,
 				0C2C95A11A1319B4002CFD08 /* LaunchScreen.xib */,
@@ -119,6 +140,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		602D9B15A0AE064FF825FBB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB023A48AAF1B136B7474297 /* Pods.debug.xcconfig */,
+				EB339F51C49D85BC27351E46 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		65AA6CB9B0D8B6369F610527 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C76825D1A131E9200E3B77D /* SystemConfiguration.framework */,
+				0C76825B1A131DF900E3B77D /* libPods-RestKit.a */,
+				C8B65C6F5CE10B608D46441E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C2C95B21A1319B4002CFD08 /* Build configuration list for PBXNativeTarget "KamcordCC" */;
 			buildPhases = (
+				751821D06580EBB85AEA8050 /* Check Pods Manifest.lock */,
 				0C2C958B1A1319B4002CFD08 /* Sources */,
 				0C2C958C1A1319B4002CFD08 /* Frameworks */,
 				0C2C958D1A1319B4002CFD08 /* Resources */,
+				6AEC36C4BA8565FC50AEDB6B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +210,7 @@
 				TargetAttributes = {
 					0C2C958E1A1319B4002CFD08 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = UWJA5A8GH3;
 					};
 					0C2C95A71A1319B4002CFD08 = {
 						CreatedOnToolsVersion = 6.1;
@@ -214,14 +257,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6AEC36C4BA8565FC50AEDB6B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		751821D06580EBB85AEA8050 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0C2C958B1A1319B4002CFD08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C2C959B1A1319B4002CFD08 /* ViewController.m in Sources */,
 				0C2C95981A1319B4002CFD08 /* AppDelegate.m in Sources */,
+				0CEB274A1A131CC200CAE57F /* TableViewController.m in Sources */,
 				0C2C95951A1319B4002CFD08 /* main.m in Sources */,
+				0C7682611A131EC800E3B77D /* KamcordModel.m in Sources */,
+				0C7682641A132DCF00E3B77D /* CellTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,21 +419,37 @@
 		};
 		0C2C95B31A1319B4002CFD08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB023A48AAF1B136B7474297 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = KamcordCC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		0C2C95B41A1319B4002CFD08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB339F51C49D85BC27351E46 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = KamcordCC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -412,6 +506,7 @@
 				0C2C95B41A1319B4002CFD08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C2C95B51A1319B4002CFD08 /* Build configuration list for PBXNativeTarget "KamcordCCTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +515,7 @@
 				0C2C95B71A1319B4002CFD08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

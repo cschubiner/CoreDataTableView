@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CellTableViewCell.h
 //  KamcordCC
 //
 //  Created by Clay Schubiner on 11/11/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CellTableViewCell : UITableViewCell
 
 @end
-
